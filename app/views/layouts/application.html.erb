@@ -11,14 +11,19 @@
   <body>
     <header>
       <div class="header-logo">
-        <a href="/">MemoApp</a>
+        <%= link_to("MemoApp", "/") %>
       </div>
       <ul class="header-menu">
-        <li><a href="#">メモを追加</a></li>
-        <li><a href="#">メモ一覧</a></li>
+        <li>  
+          <%= link_to("メモを追加", "#") %>
+        </li>
+        <li>
+          <%= link_to("メモ一覧", "/") %>
+        </li>
       </ul>
     </header>
 
     <%= yield %>
+    
   </body>
 </html>

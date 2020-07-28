@@ -1,5 +1,9 @@
-<div class="container">
-  <div class="posts-index-item">
-    今日の予定
+<div class="main posts-index">
+  <div class="container">
+    <% @lists.each do |list| %>
+      <div class="posts-index-item">
+        <%= list.content%>
+      </div>
+    <% end %>
   </div>
 </div>
