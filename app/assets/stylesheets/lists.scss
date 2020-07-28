@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2C7CFF;
+  height: 60px;
+  width: auto;
+}
+
+.header-logo {
+  float: left;
+  font-family: 'arial black';
+  padding: 10px 0px 0px 40px; 
+}
+
+.header-logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+}
+
+.header-menu {
+  float: right;
+}
+
+.header-menu li{
+  list-style: none;
+  float: left;
+  font-size: 18px;
+  padding: 16px 40px 0px 0px; 
+}
+
+.header-menu a{
+  text-decoration: none;
+  color: #fff;
+}
+
+
