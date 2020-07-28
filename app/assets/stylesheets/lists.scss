@@ -3,16 +3,26 @@
   padding: 0;
 }
 
+html {
+  font: 100%/1.5 'Avenir Next', 'Hiragino Sans', sans-serif;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
+body {
+  background-color: #F5F8FA;
+}
+
 header {
-  background-color: #2C7CFF;
-  height: 60px;
+  background-color: #88D6F5;
+  height: 70px;
   width: auto;
 }
 
 .header-logo {
   float: left;
   font-family: 'arial black';
-  padding: 10px 0px 0px 40px; 
+  padding: 12px 0px 0px 40px; 
 }
 
 .header-logo a {
@@ -29,7 +39,7 @@ header {
   list-style: none;
   float: left;
   font-size: 18px;
-  padding: 16px 40px 0px 0px; 
+  padding: 20px 40px 0px 0px; 
 }
 
 .header-menu a{
@@ -37,4 +47,28 @@ header {
   color: #fff;
 }
 
+.main-lists-index {
+  padding-top: 50px;
+}
+
+.container {
+  width:700px;
+  margin:0 auto;
+  background-color: #fff;
+}
+
+.lists-index-item {
+  width: auto; 
+  height:50px;
+  display: flex;
+	align-items: center;
+  padding:10px; 
+  border:1px
+  solid #DCDCDC;
+  border-right:none;
+  border-left:none;
+  border-top:none;
+  font-size: 20px;
+  box-shadow: 0 2px 6px #c1ced7;
+}
 
