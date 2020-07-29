@@ -2,7 +2,7 @@
   <div class="lists-index-container">
     <% @lists.each do |list| %>
       <div class="lists-index-item">
-        <p><%= link_to(list.content,"lists/#{list.id}") %></p>
+        <%= link_to(list.content,"lists/#{list.id}") %>
       </div>
     <% end %>
   </div>
