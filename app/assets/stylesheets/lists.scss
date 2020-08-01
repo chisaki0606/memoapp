@@ -75,6 +75,37 @@ header {
   box-shadow: 0 2px 6px #c1ced7;
 }
 
+.main-lists-show {
+  padding-top: 50px;
+  width: 100%;
+  height: auto;
+}
+
+.lists-show-container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.lists-show-item {
+  background-color: #fff;
+  width: auto;
+  height: auto;
+  padding: 1.5em;
+  margin: 1em 0;
+  border: 1px solid #DCDCDC;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  box-shadow: 0 2px 6px #c1ced7;
+  font-size: 30px;
+}
+
+.list-time {
+  color: #8f969c;
+  margin-top: 16px;
+  font-size: 16px;
+}
+
 .main-lists-new{
   padding-top: 50px;
   width: 100%;
