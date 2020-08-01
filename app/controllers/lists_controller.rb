@@ -1,6 +1,6 @@
 class ListsController < ApplicationController
   def index
-    @lists = List.all
+    @lists = List.all.order(created_at: :desc)
   end
 
   def show
@@ -8,6 +8,12 @@ class ListsController < ApplicationController
   end
 
   def new
+  end
+
+  def create
+    @list = List.new(content: params[:content])
+    @list.save
+    redirect_to("/")
   end
 
 end

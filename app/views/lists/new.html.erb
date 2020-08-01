@@ -1,12 +1,13 @@
 <div class="main-lists-new">
   <div class="lists-new-container">
     <h2 class="form-heading">メモを追加してください</h2>
-
-    <div class="form">
-      <div class="form-bady">
-        <textarea></textarea>
-        <input type="submit" value="追加">
+    <%= form_tag("/lists/create") do %>
+      <div class="form">
+        <div class="form-bady">
+          <textarea name="content" placeholder="メモの内容を書いてください"></textarea>
+          <input type="submit" value="追加">
+        </div>
       </div>
-    </div>
+    <% end %>
   </div>
 </div>
