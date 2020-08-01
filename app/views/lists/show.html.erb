@@ -5,6 +5,9 @@
       <div class="list-time">
         <%= @list.created_at %>
       </div>
+      <div class="list-menus">
+        <%= link_to("編集", "/lists/#{@list.id}/edit") %>
+      </div>
     </div>
   </div>
 </div>

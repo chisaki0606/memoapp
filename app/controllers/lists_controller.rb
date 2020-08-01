@@ -16,4 +16,15 @@ class ListsController < ApplicationController
     redirect_to("/")
   end
 
+  def edit
+    @list = List.find_by(id: params[:id])
+  end
+
+  def update
+    @list = List.find_by(id: params[:id])
+    @list.content = params[:content]
+    @list.save
+    redirect_to("/")
+  end
+
 end
