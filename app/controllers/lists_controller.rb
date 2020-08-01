@@ -12,8 +12,11 @@ class ListsController < ApplicationController
 
   def create
     @list = List.new(content: params[:content])
-    @list.save
-    redirect_to("/")
+    if @list.save
+      redirect_to("/")
+    else
+      redirect_to("/lists/#{@list.id}/new")
+    end
   end
 
   def edit
@@ -23,7 +26,17 @@ class ListsController < ApplicationController
   def update
     @list = List.find_by(id: params[:id])
     @list.content = params[:content]
-    @list.save
+
+    if @list.save
+      redirect_to("/")
+    else
+      redirect_to("/lists/#{@list.id}/edit")
+    end
+  end
+
+  def destroy
+    @list = List.find_by(id: params[:id])
+    @list.destroy
     redirect_to("/")
   end
 
